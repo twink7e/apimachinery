@@ -338,8 +338,8 @@ func fromUnstructured(sv, dv reflect.Value, ctx *fromUnstructuredContext) error 
 					return nil
 				}
 			}
-			return fmt.Errorf("cannot convert %s to %s", st.String(), dt.String())
 		}
+		return fmt.Errorf("cannot convert %s to %s", st.String(), dt.String())
 	}
 
 	// Check if the object has a custom JSON marshaller/unmarshaller.
